@@ -38,6 +38,11 @@ import wireframe from '../sample/wireframe/meta';
 import worker from '../sample/worker/meta';
 import workloadSimulator from '../sample/workloadSimulator/meta';
 
+// more test
+import myTest from "../sample/More/myTest/meta";
+import GameOFLife from "../sample/More/Game of Life/meta";
+import Engine from "../sample/More/Engine/meta";
+
 export type SourceInfo = {
   path: string;
 };
@@ -60,6 +65,18 @@ type PageCategory = {
 
 export const pageCategories: PageCategory[] = [
   // Samples that implement basic rendering functionality using the WebGPU API.
+  {
+    title: 'More Test',
+    description:
+      'My Test implemented with the WebGPU API.',
+    samples: {
+      myTest,
+      GameOFLife,
+      Engine,
+    },
+  },
+
+
   {
     title: 'Basic Graphics',
     description:
